@@ -68,3 +68,85 @@ footer {
     color: white;
     font-size: 0.9em;
 }
+
+/* Estilização da Seção de Habilidades */
+
+/* Container Flexbox */
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    display: flex; /* ATIVA O FLEXBOX */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards quando não preenchem a linha inteira */
+}
+
+/* Estilização Individual do Card */
+.habilidade-card {
+    background-color: #f9f9f9; /* Fundo leve para o card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+    text-align: center; /* Centraliza o texto dentro do card */
+    
+    /* Configuração de Tamanho e Flex */
+    flex: 1 1 200px; /* Garante que o card tenha no mínimo 200px de largura e possa crescer */
+    max-width: 300px; /* Limita o tamanho máximo */
+    transition: transform 0.3s ease-in-out; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse */
+.habilidade-card:hover {
+    transform: translateY(-5px); /* Move o card um pouco para cima */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+}
+
+.habilidade-card h3 {
+    color: #007bff; /* Cor de destaque para o título da habilidade */
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.habilidade-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ======================================= */
+/* 4. MEDIA QUERY PARA TELAS PEQUENAS (Mobile) */
+/* ======================================= */
+@media (max-width: 600px) {
+
+    /* Ajuste do Container Principal */
+    main {
+        margin: 10px; /* Reduz a margem lateral */
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    /* Centraliza a Foto de Perfil (se estiver usando) */
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Ajuste do Menu de Navegação */
+    nav ul {
+        flex-direction: column; /* Faz os links ficarem em coluna, um em cima do outro */
+    }
+
+    /* Ajuste da Seção de Habilidades (para o layout em grid) */
+    .habilidade-card {
+        flex: 1 1 100%; /* Ocupa a largura total da tela no mobile */
+        max-width: 100%;
+    }
+
+    /* Ajuste dos Títulos */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+}
