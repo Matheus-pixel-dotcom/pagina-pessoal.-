@@ -1,0 +1,93 @@
+/* Estilo da Navegação (Menu) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    /* 🚀 Adicionando Flexbox */
+    display: flex; 
+    justify-content: center; /* Centraliza horizontalmente os itens da lista */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+}
+
+nav ul li {
+    /* Remove a propriedade 'display: inline;' que tínhamos antes, pois o Flexbox já faz isso */
+    margin: 0 20px; /* Aumenta o espaçamento entre os links */
+}
+/* ... o resto do código nav ul li a, etc., permanece igual ... */
+
+/* Estilo do Container de Projetos */
+.projetos-container {
+    display: flex; /* Transforma em um container Flex */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não couberem */
+    gap: 20px; /* Cria um espaçamento (gutter) entre os cartões */
+    justify-content: space-around; /* Distribui os cartões uniformemente */
+}
+
+/* Estilo de cada Cartão de Projeto */
+.projeto-card {
+    background-color: #e9ecef; /* Um fundo levemente diferente para o cartão */
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 300px; /* Flexbox: Garante que o cartão cresça(1), não encolha(1) e tenha pelo menos 300px de largura base */
+    min-width: 280px; /* Garante que não fique muito estreito em telas pequenas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo do Container de Projetos */
+.projetos-container {
+    display: flex; /* Transforma em um container Flex */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não couberem */
+    gap: 20px; /* Cria um espaçamento (gutter) entre os cartões */
+    justify-content: space-around; /* Distribui os cartões uniformemente */
+}
+
+/* Estilo de cada Cartão de Projeto */
+.projeto-card {
+    background-color: #e9ecef; /* Um fundo levemente diferente para o cartão */
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 300px; /* Flexbox: Garante que o cartão cresça(1), não encolha(1) e tenha pelo menos 300px de largura base */
+    min-width: 280px; /* Garante que não fique muito estreito em telas pequenas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Seleciona todos os elementos (reset básico) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página (fonte principal) */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando a nova fonte */
+    font-weight: 400; /* Peso normal para o texto */
+    background-color: #F8F9FA;
+    color: #333; 
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Peso mais forte para os títulos */
+}
+
+/* Seleciona todos os elementos (reset básico) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página (fonte principal) */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando a nova fonte */
+    font-weight: 400; /* Peso normal para o texto */
+    background-color: #F8F9FA;
+    color: #333; 
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Peso mais forte para os títulos */
+}

@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Meu Portfólio Pessoal</title> 
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>[Seu Nome Aqui]</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou [Seu Nome], um [Sua Profissão/Área de Estudo]. Adoro [Seu Hobby/Interesse].</p>
+            </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div>
+                <h3>Projeto 1</h3>
+                <p>Breve descrição do seu primeiro projeto.</p>
+            </div>
+            <div>
+                <h3>Projeto 2</h3>
+                <p>Breve descrição do seu segundo projeto.</p>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Você pode me encontrar em:</p>
+            <ul>
+                <li>Email: seu-email@exemplo.com</li>
+                <li>LinkedIn: /seu-linkedin</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+🎨 Estilização Básica com CSS (style.css)
+O CSS dará vida e forma à sua estrutura. Crie um arquivo chamado style.css na mesma pasta do seu index.html.
+
+CSS
+
+/* Seleciona todos os elementos (reset básico) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho total */
+}
+
+/* Estilo do corpo da página (fundo e fonte geral) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo bem clara */
+    color: #333; /* Cor do texto principal */
+    line-height: 1.6;
+}
+
+/* Estilo do Cabeçalho (Header) */
+header {
+    background-color: #007bff; /* Cor azul primária */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilo da Navegação (Menu) */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Coloca os itens na mesma linha */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo das Seções de Conteúdo */
+main section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Limita a largura para melhor leitura */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 8px;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff; /* Linha sob o título da seção */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    position: fixed; /* Fixa o rodapé na parte inferior, se o conteúdo for pequeno */
+    bottom: 0;
+    width: 100%;
+}
+
+<section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="projetos-container"> 
+        <div class="projeto-card"> 
+            <h3>Projeto 1</h3>
+            <p>Breve descrição do seu primeiro projeto.</p>
+        </div>
+        <div class="projeto-card">
+            <h3>Projeto 2</h3>
+            <p>Breve descrição do seu segundo projeto.</p>
+        </div>
+        <div class="projeto-card">
+            <h3>Projeto 3</h3>
+            <p>Breve descrição do seu terceiro projeto.</p>
+        </div>
+    </div>
+</section>
+
+/* Estilo do Container de Projetos */
+.projetos-container {
+    display: flex; /* Transforma em um container Flex */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha se não couberem */
+    gap: 20px; /* Cria um espaçamento (gutter) entre os cartões */
+    justify-content: space-around; /* Distribui os cartões uniformemente */
+}
+
+/* Estilo de cada Cartão de Projeto */
+.projeto-card {
+    background-color: #e9ecef; /* Um fundo levemente diferente para o cartão */
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 300px; /* Flexbox: Garante que o cartão cresça(1), não encolha(1) e tenha pelo menos 300px de largura base */
+    min-width: 280px; /* Garante que não fique muito estreito em telas pequenas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Seleciona todos os elementos (reset básico) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página (fonte principal) */
+body {
+    font-family: 'Montserrat', sans-serif; /* Usando a nova fonte */
+    font-weight: 400; /* Peso normal para o texto */
+    background-color: #F8F9FA;
+    color: #333; 
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Peso mais forte para os títulos */
+}
